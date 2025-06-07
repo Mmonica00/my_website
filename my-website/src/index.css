@@ -1,0 +1,23 @@
+@config "../tailwind.config.js";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== CSS-First Configuration ===== */
+@layer base {
+  /* 1. Body uses your custom “beige” background + Inter font */
+  body {
+    @apply bg-beige text-neutral-900 font-sans;
+  }
+
+  /* 2. All headings use Playfair Display serif */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+
+  /* 3. Anchor tags default to neutral-900 with a subtle hover to neutral-600 */
+  a {
+    @apply text-neutral-900 hover:text-neutral-600;
+  }
+}
