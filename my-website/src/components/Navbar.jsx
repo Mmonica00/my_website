@@ -1,52 +1,49 @@
 import { useState,useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import logo from "../assets/logo.svg";
 import MobileMenu from "./MobileMenu";
 
-const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
+const Navbar = ({ menuOpen, setMenuOpen }) => {
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
   }, [menuOpen]);
 
   return (
     <>
-      <nav className="fixed top-0 w-full z-40 bg-black/90 backdrop-blur-md border-b border-white/20 shadow-xl">
+      <nav className="fixed top-0 w-full z-40 bg-[#e8e4df]/95 backdrop-blur-md border-b border-[#d4cfc8] shadow-sm">
         <div className="max-w-5xl mx-auto px-4">
-          <div className="flex justify-between items-center h-20">
-            <a href="/" className="font-mono text-2xl font-bold text-white hover:text-blue-400 transition-colors">
+          <div className="flex justify-between items-center h-32">
+            <a href="/" className="font-mono text-4xl font-bold text-[#2c2c2c] hover:text-[#4a4a4a] transition-colors">
               {" "}
-              pedro<span className="text-blue-500">.tech</span>{" "}
+              pedro<span className="text-[#4a4a4a]">.tech</span>{" "}
             </a>
 
             {/* Mobile menu button - only visible on small screens */}
             <button
-              className="md:hidden w-8 h-8 relative cursor-pointer z-40 text-white hover:text-blue-400 transition-colors flex items-center justify-center"
+              className="lg:hidden w-12 h-12 relative cursor-pointer z-40 text-[#2c2c2c] hover:text-[#4a4a4a] transition-colors flex items-center justify-center"
               onClick={() => setMenuOpen((prev) => !prev)}
               aria-label="Toggle menu"
             >
-              {menuOpen ? <X size={24} /> : <Menu size={24} />}
+              {menuOpen ? <X size={32} /> : <Menu size={32} />}
             </button>
 
             {/* Desktop navigation - hidden on mobile */}
-            <div className="hidden md:flex items-center space-x-8">
+            <div className="hidden lg:flex items-center space-x-8">
               <a
                 href="/"
-                className="text-gray-200 hover:text-blue-400 transition-colors font-medium text-lg py-2"
+                className="text-[#2c2c2c] hover:text-[#4a4a4a] transition-colors font-medium text-2xl py-4"
               >
                 Home
               </a>
               <a
                 href="/about"
-                className="text-gray-200 hover:text-blue-400 transition-colors font-medium text-lg py-2"
+                className="text-[#2c2c2c] hover:text-[#4a4a4a] transition-colors font-medium text-2xl py-4"
               >
                 About
               </a>
               <a
                 href="/contact"
-                className="text-gray-200 hover:text-blue-400 transition-colors font-medium text-lg py-2"
+                className="text-[#2c2c2c] hover:text-[#4a4a4a] transition-colors font-medium text-2xl py-4"
               >
                 Contact
               </a>
@@ -54,7 +51,8 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-      <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      
+        <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
     </>
   );
 }
