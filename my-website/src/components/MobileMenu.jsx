@@ -4,7 +4,7 @@ import { X } from "lucide-react";
 const MobileMenu = ({ menuOpen, setMenuOpen }) => {
   return (
     <div
-      className={`fixed top-[45px] right-[0px] w-[100%] h-screen bg-[#e8e4df]/50 backdrop-blur-md z-30 flex flex-col items-center justify-center
+      className={`fixed top-[45px] right-[0px] w-[100%] h-screen bg-[#e8e4df]/60 backdrop-blur-md z-30 flex flex-col items-center justify-center
                      transition-all duration-300 ease-in-out
                      ${menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}
                    `}

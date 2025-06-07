@@ -10,12 +10,11 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
 
   return (
     <>
-      <nav className="fixed top-0 w-full z-40 bg-[#e8e4df]/95 backdrop-blur-md border-b border-[#d4cfc8] shadow-sm">
-        <div className="max-w-5xl mx-auto px-4">
+      <nav className="fixed top-0 w-full z-40 bg-[#e8e4df] backdrop-blur-md border-b border-[#e8e4df] shadow-sm">
+        <div className="max-w-screen mx-auto px-4">
           <div className="flex justify-between items-center h-32">
             <a href="/" className="font-mono text-4xl font-bold text-[#2c2c2c] hover:text-[#4a4a4a] transition-colors">
               {" "}
-              pedro<span className="text-[#4a4a4a]">.tech</span>{" "}
             </a>
 
             {/* Mobile menu button - only visible on small screens */}
@@ -51,8 +50,6 @@ const Navbar = ({ menuOpen, setMenuOpen }) => {
           </div>
         </div>
       </nav>
-      
-        <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
     </>
   );
 }

@@ -6,9 +6,18 @@
 
 /* ===== CSS-First Configuration ===== */
 @layer base {
-  /* 1. Body uses your custom “beige” background + Inter font */
+  html, body {
+    @apply h-full w-full;
+    margin: 0;
+    padding: 0;
+  }
+
   body {
-    @apply bg-beige text-neutral-900 font-sans;
+    @apply bg-beige text-neutral-900 font-sans min-h-full w-full overflow-x-hidden;
+  }
+
+  #root {
+    @apply min-h-full w-full;
   }
 
   /* 2. All headings use Playfair Display serif */
