@@ -33,14 +33,14 @@ export default function Contact() {
   };
 
   return (
-    <section className="flex  md:flex-row min-h-screen">
+    <section className="flex  md:flex-row min-h-screen justify-center">
 
       {/* Right side: form */}
-      <div className="w-full md:w-1/2 bg-[#e8e4df] flex flex-col items-center justify-center px-8 py-12 md:py-0">
-        <h2 className="text-4xl md:text-5xl font-serif text-black mb-6">
+      <div className="w-[800px] md:w-1/2 bg-[#e8e4df] flex flex-col items-center justify-center px-8 py-12 md:py-0">
+        <h1 className="text-[3rem] md:text-[4rem] font-serif text-black leading-[0.8] mb-[1rem]">
           Get in touch
-        </h2>
-        <p className="text-lg text-neutral-800 mb-8">
+        </h1>
+        <p className="text-lg text-neutral-800 mb-4">
           I’d love to hear from you. Drop me a message below and I’ll get back
           to you soon.
         </p>
@@ -55,20 +55,20 @@ export default function Contact() {
             name="user_name"
             placeholder="Your Name"
             required
-            className="w-full px-4 py-3 border border-neutral-200 rounded focus:outline-none focus:ring-2 focus:ring-neutral-400"
+            className="w-full h-[20px] px-4 py-3 border border-neutral-200 rounded focus:outline-none focus:ring-2 focus:ring-neutral-400"
           />
           <input
             type="email"
             name="user_email"
             placeholder="Your Email"
             required
-            className="w-full px-4 py-3 border border-neutral-200 rounded focus:outline-none focus:ring-2 focus:ring-neutral-400"
+            className="w-full h-[20px] px-4 py-3 border border-neutral-200 rounded focus:outline-none focus:ring-2 focus:ring-neutral-400"
           />
           <textarea
             name="message"
             placeholder="Your Message"
             required
-            className="w-full px-4 py-3 border border-neutral-200 rounded h-32 focus:outline-none focus:ring-2 focus:ring-neutral-400"
+            className="w-full h-[100px] px-4 py-3 border border-neutral-200 rounded h-32 focus:outline-none focus:ring-2 focus:ring-neutral-400"
           />
 
           <button
