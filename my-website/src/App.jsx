@@ -5,6 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import MobileMenu from "./components/MobileMenu";
+import { Analytics } from "@vercel/analytics/next"
 
 // Lazy load pages
 const Home = lazy(() => import("./pages/Home"));
