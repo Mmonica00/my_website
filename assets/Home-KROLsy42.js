@@ -1,0 +1,6 @@
+import{c as t,j as e}from"./index-BzwYyOrr.js";/**
+ * @license lucide-react v0.513.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const s=[["path",{d:"M5 12h14",key:"1ays0h"}],["path",{d:"m12 5 7 7-7 7",key:"xquz4c"}]],r=t("arrow-right",s),c="/assets/heroImage-B_sOaTta.png";function a(){return e.jsxs("section",{className:"flex two-col md:flex-row min-h-screen bg-[#e8e4df] items-center",children:[e.jsx("div",{className:"left-section left-0 w-[50%] md:w-1/2 h-screen md:h-screen overflow-hidden justify-center",children:e.jsx("img",{src:c,alt:"Franklin Reynolds",className:"object-cover w-full h-full"})}),e.jsxs("div",{className:"right-section right-0 w-[50%] md:w-1/2 bg-[#e8e4df] flex flex-col items-center justify-center px-8 py-12",children:[e.jsx("h1",{className:"text-[4rem] md:text-[8rem] font-serif text-black leading-[0.8] mb-[0rem]",children:"Monica Samaan"}),e.jsx("p",{className:"text-lg md:text-xl text-gray-600 mb-6",children:"Computer Science & Engineering Undergraduate"}),e.jsxs("a",{href:"/contact",className:"w-[100px] h-[50px] inline-flex items-center gap-2 border border-black text-black px-6 py-3 font-medium rounded hover:bg-[#d4cfc8] hover:text-white transition",children:[e.jsx(r,{size:20}),"Email me"]})]})]})}export{a as default};
