@@ -23,7 +23,7 @@ export default function Home() {
           Computer Science & Engineering Undergraduate
         </p>
         <a
-          href="mailto:monica.samaan@outlook.com"
+          href="/contact"
           className="w-[100px] h-[50px] inline-flex items-center gap-2 border border-black text-black px-6 py-3 font-medium rounded hover:bg-[#d4cfc8] hover:text-white transition"
         >
           <ArrowRight size={20} />

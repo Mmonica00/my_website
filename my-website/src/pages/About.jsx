@@ -15,14 +15,7 @@ export default function About() {
         {/* Right: Beige background with about text */}
         <div className="right-section right-0 w-[50%] md:w-1/2 bg-[#e8e4df] flex flex-col items-center justify-center px-8 py-12">
         <p className="text-xl text-black leading-relaxed">
-            My name is Franklin and I’m a fourth‐year BFA Creative Writing
-            student at De Loureigh University. I am currently an intern at
-            Carstell Press. I’ve spent the last two years honing my craft—
-            writing editorial copy, editing manuscripts, and collaborating with
-            a team of passionate creatives. Outside of school, I work on my own
-            short‐form fiction and host a weekly literary podcast. I love
-            exploring how good storytelling can transform how people think
-            about the world.
+        I'm Monica Samaan, a third-year Computer Engineering student at the German University in Cairo, passionate about software development and innovation. With a 3.7 GPA, I'm eager to apply my skills to real-world tech challenges and drive positive change.
           </p>
         </div>
       </section>
