@@ -11,7 +11,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
-  "homepage": "https://github.com/Mmonica00/my_website/tree/ea7362fc839f0858728a9f7f86341cd6d3e5a752/my-website",
+  "homepage": "https://Mmonica00.github.io/my-website",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@vercel/analytics": "^1.5.0",
